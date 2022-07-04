@@ -1,7 +1,6 @@
-# WEBPACK
+https://dias-web.github.io/technoshop/
 
-ссылка на youtube
-https://youtu.be/j2kK1Lfl30A
+# WEBPACK
 
 Для установки пакетов используйте команду npm install
 
