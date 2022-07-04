@@ -1,1 +1,1 @@
-https://dias-web.github.io/technoshop/
+https://dias-web.github.io/technoshop/src/index.html
