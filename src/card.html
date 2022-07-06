@@ -23,7 +23,7 @@
 
         <form class="header__search search">
           <input class="search__input" type="search" />
-          <button class="search__button">
+          <button class="search__button" aria-label="найти на сайте">
             <svg
               width="24"
               height="24"
@@ -38,7 +38,7 @@
           </button>
         </form>
         <div class="header__nav">
-          <a href="tel:87778352107" class="header__phone">
+          <a href="tel:87778352107" class="header__phone" aria-label="позвонить в нам">
             <svg
               width="28"
               height="28"
@@ -52,7 +52,7 @@
             </svg>
             <span>8 777 835 21 07</span>
           </a>
-          <a href="cart.html" class="header__cart">
+          <a href="cart.html" class="header__cart" aria-label="перейти в корзину">
             <svg
               width="36"
               height="36"
@@ -69,7 +69,251 @@
       </div>
     </header>
 
-    <main></main>
+    <main class="main">
+      <section class="card">
+        <div class="container">
+          <div class="card__details">
+            <div class="card__gallery">
+              <div class="swiper card__image">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <img src="img/clock1.jpg" alt="Изображение часов" />
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="img/clock2.jpg" alt="Изображение часов" />
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="img/clock3.jpg" alt="Изображение часов" />
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="img/clock4.jpg" alt="Изображение часов" />
+                  </li>
+                </ul>
+              </div>
+
+              <div class="swiper card__slider-thumb">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <button class="card__thumb-btn">
+                      <img src="img/clock1-m.jpg" alt="Изображение часов" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide">
+                    <button class="card__thumb-btn">
+                      <img src="img/clock2-m.jpg" alt="Изображение часов" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide">
+                    <button class="card__thumb-btn">
+                      <img src="img/clock3-m.jpg" alt="Изображение часов" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide">
+                    <button class="card__thumb-btn">
+                      <img src="img/clock4-m.jpg" alt="Изображение часов" />
+                    </button>
+                  </li>
+                </ul>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <div class="card__info">
+              <h2 class="card__title">Спортивные часы Garmin Venu</h2>
+              <p class="card__vendor-code">Артикул: 654651968</p>
+
+              <div class="card__control">
+                <div class="card__count">
+                  <button class="card__btn card__btn_dec" aria-label="уменьшить">–</button>
+                  <output class="card__number">1</output>
+                  <button class="card__btn card__btn_inc" aria-label="добавить">+</button>
+                </div>
+                <p class="card__price">21 990 ₽</p>
+                <button class="card__add-cart">В корзину</button>
+              </div>
+            </div>
+            <ul class="card__params-list">
+              <li class="card__params-item">
+                <span>Производитель:</span>
+                <span>Garmin</span>
+              </li>
+              <li class="card__params-item">
+                <span>Цвет:</span>
+                <span>бежевый </span>
+              </li>
+              <li class="card__params-item">
+                <span>Материал:</span>
+                <span>нержавеющая сталь</span>
+              </li>
+              <li class="card__params-item">
+                <span>Диагональ (дюйм):</span>
+                <span>1.2"</span>
+              </li>
+              <li class="card__params-item">
+                <span>Разрешение:</span>
+                <span>390x390</span>
+              </li>
+              <li class="card__params-item">
+                <span>Плотность пикселей:</span>
+                <span>460 ppi</span>
+              </li>
+              <li class="card__params-item">
+                <span>Экран:</span>
+                <span>AMOLED</span>
+              </li>
+              <li class="card__params-item">
+                <span>Сенсорный дисплей:</span>
+                <span>есть</span>
+              </li>
+              <li class="card__params-item">
+                <span>Цветной дисплей:</span>
+                <span>есть</span>
+              </li>
+              <li class="card__params-item">
+                <span>Длина:</span>
+                <span>43.2 мм</span>
+              </li>
+              <li class="card__params-item">
+                <span>Ширина:</span>
+                <span>43.2 мм</span>
+              </li>
+              <li class="card__params-item">
+                <span>Толщина:</span>
+                <span>12.4 мм</span>
+              </li>
+              <li class="card__params-item">
+                <span>Вес:</span>
+                <span>46.3 г</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card__description">
+            <div class="card__description-title">Описание</div>
+            <div class="card__description-text">
+              <p>
+                Смарт-часы Garmin Venu (010-02173-23) предназначены для тех, кто
+                стремится вести активный образ жизни и хочет следить со
+                показателями своей активности. Модель оснащена набором
+                высокоточных датчиков и навигационными модулями, что позволит
+                легко отслеживать количество шагов, пройденное расстояние,
+                потраченные калории, пульс, а также уровень кислорода, стресса и
+                восстановления. Благодаря этому вы всегда сможете контролировать
+                свои результаты и даже соревноваться с друзьями.
+              </p>
+              <p>
+                Основой Garmin Venu является энергоэффективный процессор и
+                собственная ОС, благодаря чему модель отличается широким набором
+                функций и различных режимов. Управление часами осуществляется
+                при помощи расположенного на лицевой панели круглого сенсорного
+                AMOLED-экрана диагональю 1.2" и с разрешением 390x390 пикселей.
+                Для подключения к смартфонам часы использует протокол Bluetooth
+                и фирменное приложение Garmin Connect. Также модель поддерживают
+                технологию ANT+ для связи со спортивным и медицинским
+                оборудованием.
+              </p>
+              <p>
+                Корпус смарт-часов выполнен из нержавеющей стали и отличается
+                высокой защищенностью, соответствующей классу WR50. Благодаря
+                этому модель позволяет выдерживать различные механические
+                воздействия и давление до 5 бар. Для удобства ношения часы
+                снабжены регулируемым силиконовым ремешком. Питание
+                осуществляется от встроенного аккумулятора, способного
+                обеспечить до 120 ч работы.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recomended">
+        <div class="container">
+          <h2 class="recomended__title">Возможно вам также понравится</h2>
+          <div class="swiper recomended__carousel">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <article class="goods-item">
+                  <a href="card.html">
+                    <img
+                      src="img/monoblok.jpg"
+                      alt="Картинки товара"
+                      class="goods-item__image"
+                    />
+                    <h3 class="goods-item__title">Моноблок HP ProOne</h3>
+                  </a>
+                  <div class="goods-item__buy">
+                    <p class="goods-item__price">38049 ₽</p>
+                    <button class="goods-item__to-cart">В корзину</button>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="goods-item">
+                  <a href="card.html">
+                    <img
+                      src="img/monoblok.jpg"
+                      alt="Картинки товара"
+                      class="goods-item__image"
+                    />
+                    <h3 class="goods-item__title">Моноблок HP ProOne</h3>
+                  </a>
+                  <div class="goods-item__buy">
+                    <p class="goods-item__price">38049 ₽</p>
+                    <button class="goods-item__to-cart">В корзину</button>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="goods-item">
+                  <a href="card.html">
+                    <img
+                      src="img/monoblok.jpg"
+                      alt="Картинки товара"
+                      class="goods-item__image"
+                    />
+                    <h3 class="goods-item__title">Моноблок HP ProOne</h3>
+                  </a>
+                  <div class="goods-item__buy">
+                    <p class="goods-item__price">38049 ₽</p>
+                    <button class="goods-item__to-cart">В корзину</button>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="goods-item">
+                  <a href="card.html">
+                    <img
+                      src="img/monoblok.jpg"
+                      alt="Картинки товара"
+                      class="goods-item__image"
+                    />
+                    <h3 class="goods-item__title">Моноблок HP ProOne</h3>
+                  </a>
+                  <div class="goods-item__buy">
+                    <p class="goods-item__price">38049 ₽</p>
+                    <button class="goods-item__to-cart">В корзину</button>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="goods-item">
+                  <a href="card.html">
+                    <img
+                      src="img/monoblok.jpg"
+                      alt="Картинки товара"
+                      class="goods-item__image"
+                    />
+                    <h3 class="goods-item__title">Моноблок HP ProOne</h3>
+                  </a>
+                  <div class="goods-item__buy">
+                    <p class="goods-item__price">38049 ₽</p>
+                    <button class="goods-item__to-cart">В корзину</button>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <h2 class="visually-hidden">Навигация сайта</h2>
@@ -148,7 +392,7 @@
 
           <ul class="footer__social social">
             <li class="social__item">
-              <a href="" class="social__link"
+              <a href="" class="social__link" aria-label="отправить сообщение в  whatsapp"
                 ><svg
                   width="26"
                   height="26"
@@ -166,7 +410,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link"
+              <a href="" class="social__link" aria-label="перейти в youtube"
                 ><svg
                   width="24"
                   height="18"
@@ -181,7 +425,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link"
+              <a href="" class="social__link" aria-label="отправить сообщение в telegram"
                 ><svg
                   width="22"
                   height="20"
