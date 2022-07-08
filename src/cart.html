@@ -13,7 +13,7 @@
   <body>
     <header class="header">
       <h1 class="visually-hidden">Techno shop - Онлайн магазин гаджетов</h1>
-      <div class="container">
+      <div class="container header__container">
         <a href="/"
           ><img
             class="footer__logo"
@@ -38,11 +38,7 @@
           </button>
         </form>
         <div class="header__nav">
-          <a
-            href="tel:87778352107"
-            class="header__phone"
-            aria-label="позвонить в нам"
-          >
+          <a href="tel:87778352107" class="header__phone" aria-label="позвонить в нам">
             <svg
               width="28"
               height="28"
@@ -56,11 +52,7 @@
             </svg>
             <span>8 777 835 21 07</span>
           </a>
-          <a
-            href="cart.html"
-            class="header__cart"
-            aria-label="перейти в корзину"
-          >
+          <a href="cart.html" class="header__cart" aria-label="перейти в корзину">
             <svg
               width="36"
               height="36"
@@ -255,14 +247,14 @@
 
     <footer class="footer">
       <h2 class="visually-hidden">Навигация сайта</h2>
-      <div class="container">
-        <a href="/"
+      <div class="container footer__container">
+        <a class="footer__logo-link" href="/"
           ><img
             class="footer__logo"
             src="img/logo.svg"
             alt="Логотип Techno shop"
         /></a>
-        <div class="footer__column">
+        <div class="footer__column footer__catalog">
           <h3 class="footer__column-title">Каталог</h3>
           <ul class="footer__list footer__list_double">
             <li class="footer__item">
@@ -295,7 +287,7 @@
           </ul>
         </div>
 
-        <div class="footer__column">
+        <div class="footer__column footer__customer">
           <h3 class="footer__column-title">Покупателям</h3>
           <ul class="footer__list">
             <li class="footer__item">
@@ -313,30 +305,27 @@
           </ul>
         </div>
 
-        <div class="footer__column">
+        <div class="footer__column footer__contacts">
           <h3 class="footer__column-title">Контакты</h3>
           <ul class="footer__list footer__list_contacts">
-            <li class="footer__item">
+            <li class="footer__item footer__list_contact">
               Тел:<a href="tel:87778352107" class="footer__link"
-                >8 777 835 21 07</a
+                > 8 777 835 21 07</a
               >
             </li>
-            <li class="footer__item">
+            <li class="footer__item footer__list_contact">
               Email:<a href="mailto:TechnoSHOP@gmail.com" class="footer__link"
-                >TechnoSHOP@gmail.com</a
+                > TechnoSHOP@gmail.com</a
               >
             </li>
           </ul>
 
           <ul class="footer__social social">
             <li class="social__item">
-              <a
-                href=""
-                class="social__link"
-                aria-label="отправить сообщение в  whatsapp"
+              <a href="" class="social__link" aria-label="отправить сообщение в  whatsapp"
                 ><svg
-                  width="26"
-                  height="26"
+                  width="24"
+                  height="24"
                   viewBox="0 0 26 26"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
@@ -354,7 +343,7 @@
               <a href="" class="social__link" aria-label="перейти в youtube"
                 ><svg
                   width="24"
-                  height="18"
+                  height="24"
                   viewBox="0 0 24 18"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
@@ -366,13 +355,10 @@
               </a>
             </li>
             <li class="social__item">
-              <a
-                href=""
-                class="social__link"
-                aria-label="отправить сообщение в telegram"
+              <a href="" class="social__link" aria-label="отправить сообщение в telegram"
                 ><svg
                   width="22"
-                  height="20"
+                  height="24"
                   viewBox="0 0 22 20"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
@@ -384,6 +370,11 @@
               </a>
             </li>
           </ul>
+        </div>
+        <p class="footer__copyright">© TechnoSHOP, 2022</p>
+        <div class="footer__design">
+          <p>Design by Anastasia Ilina</p>
+          <p>Tg: @Mrshmallowww</p>
         </div>
       </div>
     </footer>
