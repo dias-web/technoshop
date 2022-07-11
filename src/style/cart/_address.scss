@@ -1,9 +1,21 @@
 .address {
   margin-bottom: 110px;
 
+  @include desktop {
+    max-width: 700px;
+  }
+
+  @include laptop {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
   &__title {
     margin-bottom: 30px;
     
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 
   &__form {
@@ -11,6 +23,19 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     color: $color-grey;
+
+    @include desktop {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    @include tablet {
+      gap: 10px 20px;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
     
   }
 
@@ -40,6 +65,10 @@
     padding: 10px;
     border: 1px solid $color-primary;
 
+    @include tablet {
+      font-size: 12px;
+    }
+
     &_select {
       appearance: none;
       color: $color-grey;
@@ -51,6 +80,7 @@
       color: $color-secondary;
       background-color: $color-primary;
       transition: background-color 0.25s ease-in-out, border 0.25s ease-in-out;
+      border: 0;
 
       &:hover {
         background-color: $color-main;
@@ -63,7 +93,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    grid-column: 3;
+    grid-column: -2;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.3;
