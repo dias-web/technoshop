@@ -29,6 +29,8 @@
       gap: 20px;
       justify-content: space-between;
     }
+
+
   }
 
   &__logo-link {
@@ -65,9 +67,9 @@
   &__nav {
     justify-self: end;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     max-width: 330px;
-    justify-content: space-between;
     width: 100%;
 
     @include mobile {
@@ -81,24 +83,46 @@
     gap: 5px;
     font-weight: 500;
     font-size: 18px;
-    line-height: 1.3;
-    transition: color 0.25s ease-in-out;
+    line-height: 22px;
+    transition: color 0.3s ease-in-out;
+
+    &:hover svg {
+      color: $color-main;
+    }
 
     &:hover {
       color: $color-main;
     }
 
+    
+    
     @include mobile {
       font-size: 14px;
-      line-height: 1.2;
+      line-height: 17px;
     }
   }
 
   &__cart {
-    transition: color 0.25s ease-in-out;
+    position: relative;
+    transition: color 0.3s ease-in-out;
 
-    &:hover {
+    &:hover svg {
       color: $color-main;
+    }
+
+    &:after {
+      content: attr(data-count);
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: $color-main;
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      right: -8px;
+      bottom: -8px;
     }
   }
 }

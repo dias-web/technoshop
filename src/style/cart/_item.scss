@@ -28,7 +28,6 @@
     @include mobile {
       margin-right: 0;
     }
-    
   }
 
   &__detail {
@@ -40,18 +39,17 @@
 
     @include desktop {
       flex-basis: 320px;
-      padding-top: 0;
     }
 
     @include tablet {
       flex-basis: 160px;
       margin-right: 7px;
+      padding-top: 0;
     }
 
     @include mobile {
       margin-right: 0;
     }
-    
   }
 
   &__title {
@@ -59,7 +57,7 @@
     margin-bottom: 14px;
     font-weight: 700;
     font-size: 22px;
-    line-height: 1.3;
+    line-height: 27px;
 
     @include desktop {
       min-height: auto;
@@ -67,21 +65,20 @@
 
     @include tablet {
       font-size: 16px;
+      line-height: 20px;
       margin-bottom: 12px;
     }
-    
   }
 
   &__vendor-code {
     font-weight: 500;
     font-size: 18px;
-  
+    line-height: 22px;
 
     @include tablet {
       font-size: 12px;
-    
+      line-height: 15px;
     }
-    
   }
 
   &__control {
@@ -94,50 +91,44 @@
 
     @include mobile {
       justify-content: flex-start;
-      gap: 39px;
+      gap: 39px
     }
-    
+
   }
 
   &__count {
     max-width: 120px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
     width: 100%;
-  
   }
 
   &__btn {
     width: 34px;
     height: 34px;
     border-radius: 50%;
+    border: 1px solid $color-primary;
     background-color: transparent;
     font-size: 30px;
-    line-height: 1;
-    border: 1px solid $color-primary;
-    transition: background-color 0.25s ease-in-out, border 0.25s ease-in-out;
-
-    &:hover {
-      background-color: $color-main;
-      border: 1px solid $color-main;
-    }
+    line-height: 100%;
   }
 
   &__number {
     font-size: 30px;
-    line-height: 1.3;
+    line-height: 37px;
 
     @include tablet {
       font-size: 20px;
+      line-height: 24px;
     }
   }
 
   &__price {
     font-weight: 500;
     font-size: 22px;
-    line-height: 1.3;
+    line-height: 27px;
     white-space: nowrap;
   }
 
@@ -149,17 +140,13 @@
     background-color: transparent;
     color: $color-grey-light;
 
-    &:hover {
-      color: $color-main;
-    }
-    
     @include mobile {
-      position: absolute;
-      top: 2px;
-      right: 0;
       min-width: 18px;
       width: 18px;
       height: 18px;
+      position: absolute;
+      top: 2px;
+      right: 0;
     }
   }
 }

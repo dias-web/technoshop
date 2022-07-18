@@ -13,24 +13,30 @@ $mobile: 560px;
 
 @mixin desktop {
   @media (max-width: #{$desktop}) {
-    @content;
+    @content
   }
 }
 
 @mixin laptop {
   @media (max-width: #{$laptop}) {
-    @content;
+    @content
   }
 }
 
 @mixin tablet {
   @media (max-width: #{$tablet}) {
-    @content;
+    @content
   }
 }
 
 @mixin mobile {
   @media (max-width: #{$mobile}) {
-    @content;
+    @content
+  }
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(360deg);
   }
 }

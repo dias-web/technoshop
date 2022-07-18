@@ -17,6 +17,7 @@
       grid-template-columns: repeat(auto-fill, 145px);
       gap: 10px;
     }
+
   }
 
   &__preload {
@@ -30,11 +31,4 @@
       animation: rotation 1s infinite linear;
     }
   }
-
-  @keyframes rotation {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
 }
